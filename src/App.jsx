@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Tabs from "./components/Tabs";
 import Table from "./components/Table";
 import Navbar from "./components/Navbar";
-import edit from "./assets/EditBlack.svg";
+import edit from "../src/Assets/EditBlack.svg";
 
 function App() {
   const [activeTab, setActiveTab] = useState("All");
