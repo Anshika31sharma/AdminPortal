@@ -1,4 +1,4 @@
-import line from "../../src/Assets/Line.svg";
+import line from "../../src/Assets/line.svg";
 import bell from "../../src/Assets/notification.svg";
 import user from "../../src/Assets/user.svg";
 import Vector from "../../src/Assets/Vector.svg";
