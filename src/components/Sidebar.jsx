@@ -1,6 +1,6 @@
 import Vector from '../../src/Assets/Vector.svg'
-import home from '../assets/Home.svg';
-import edit from '../assets/EditBlue.svg';
+import home from '../../src/Assets/Home.svg';
+import edit from '../../src/Assets/EditBlue.svg';
 
 export default function Sidebar() {
   return (

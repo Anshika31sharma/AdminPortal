@@ -1,7 +1,7 @@
-import line from "../Assets/line.svg";
-import bell from "../Assets/notification.svg";
-import user from "../Assets/user.svg";
-import Vector from "../Assets/Vector.svg";
+import line from "../../src/Assets/Line.svg";
+import bell from "../../src/Assets/notification.svg";
+import user from "../../src/Assets/user.svg";
+import Vector from "../../src/Assets/Vector.svg";
 
 export default function Navbar({ onMenuClick }) {
   return (
