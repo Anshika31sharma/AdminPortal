@@ -25,21 +25,23 @@ function App() {
   }, [showSidebar]);
 
   return (
-    <div className="flex relative mb-20 ">
+    <div className="flex relative min-h-screen  ">
       {showSidebar && (
-        <div className="fixed inset-0  bg-opacity-30 z-20 lg:hidden" />
+        <div className="fixed inset-0 min-h-screen  bg-opacity-30 z-20 lg:hidden" />
       )}
 
-      <div
-        ref={sidebarRef}
-        className={`fixed top-0 left-0 z-30 h-screen bg-white shadow-md transition-transform duration-300 ease-in-out
-        ${showSidebar ? "translate-x-0" : "-translate-x-full"}
-        lg:w-64 xl:w-64 w-48 md:w-60 lg:h-screen xl:h-screen md:h-screen  lg:translate-x-0 lg:static`}
-      >
-        <Sidebar />
-      </div>
+  <div
+  ref={sidebarRef}
+  className={`bg-white shadow-md transition-transform duration-300 ease-in-out
+    fixed top-0 left-0 z-30 h-screen
+    ${showSidebar ? "translate-x-0" : "-translate-x-full"}
+    w-48 md:w-60 lg:w-64 lg:translate-x-0`}
+>
+  <Sidebar />
+</div>
 
-      <div className="flex-1 w-full ">
+
+      <div className="flex-1 w-full lg:ml-64 ">
         <Navbar onMenuClick={() => setShowSidebar(true)} />
         <div className="pt-16 lg:pt-20 px-4 md:px-6">
           <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4">
