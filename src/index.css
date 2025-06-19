@@ -1,1 +1,16 @@
 @import "tailwindcss";
+@layer base {
+  :root {
+    --font-outfit: 'Outfit', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-outfit);
+  }
+}
+
+@layer utilities {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
+}
