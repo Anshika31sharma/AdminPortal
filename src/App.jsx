@@ -25,7 +25,7 @@ function App() {
   }, [showSidebar]);
 
   return (
-    <div className="flex relative">
+    <div className="flex relative mb-20 ">
       {showSidebar && (
         <div className="fixed inset-0  bg-opacity-30 z-20 lg:hidden" />
       )}
@@ -39,7 +39,7 @@ function App() {
         <Sidebar />
       </div>
 
-      <div className="flex-1 w-full">
+      <div className="flex-1 w-full ">
         <Navbar onMenuClick={() => setShowSidebar(true)} />
         <div className="pt-16 lg:pt-20 px-4 md:px-6">
           <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4">
