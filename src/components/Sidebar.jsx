@@ -1,3 +1,4 @@
+import React from 'react';
 import home from '../../src/Assets/Home.svg';
 import edit from '../../src/Assets/EditBlue.svg';
 

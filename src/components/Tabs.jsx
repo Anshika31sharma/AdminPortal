@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Tabs({ activeTab, setActiveTab }) {
   const tabs = ["All", "Approved", "Rejected"];
 
@@ -6,6 +8,13 @@ export default function Tabs({ activeTab, setActiveTab }) {
       {tabs.map(tab => (
         <button
           key={tab}
+          data-testid={
+            tab === "Approved"
+              ? "approved-tab"
+              : tab === "Rejected"
+              ? "rejected-tab"
+              : "all-tab"
+          }
           onClick={() => setActiveTab(tab)}
           className={`pb-2 min-w-[80px] sm:w-24 md:w-28 text-sm sm:text-base ${
             activeTab === tab

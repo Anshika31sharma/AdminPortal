@@ -1,3 +1,4 @@
+import React from 'react';
 const applications = [
   { id: "0001", date: "28 December 2022", status: "Approved" },
   { id: "0002", date: "28 December 2022", status: "Rejected" },
@@ -16,8 +17,8 @@ export default function Table({ activeTab }) {
       : applications.filter((app) => app.status === activeTab);
 
   return (
-    <div className="mt-4 px-2 sm:px-4 md:px-6">
-      <div className="overflow-x-auto w-full border p-6 border-gray-300 rounded-lg bg-white">
+    <div className="mt-4 p-4 px-2 sm:px-4 md:px-6">
+      <div className="overflow-x-auto w-full border p-4 border-gray-300 rounded-lg bg-white">
         <table className="min-w-full divide-y divide-gray-200">
           <thead>
             <tr className="text-left text-base sm:text-lg border-b border-gray-300">

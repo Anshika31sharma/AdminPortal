@@ -1,3 +1,4 @@
+import React from 'react';
 import line from "../../src/Assets/line.svg";
 import bell from "../../src/Assets/notification.svg";
 import user from "../../src/Assets/user.svg";
@@ -11,7 +12,7 @@ export default function Navbar({ onMenuClick }) {
           <img src={line} alt="" />
           
         </button>
-         <div className=' flex gap-4 items-center justify-center'>
+         <div className=' flex gap-4 ml-5  items-center justify-center'>
         <img src={Vector} alt="" />
         <span className="text-lg font-extrabold text-[12px] leading-[100%] tracking-[0%] font-outfit">Admin Portal</span>
        </div>
