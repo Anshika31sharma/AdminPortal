@@ -1,4 +1,4 @@
-import Vector from '../assets/Vector.svg';
+import Vector from '../../src/Assets/Vector.svg'
 import home from '../assets/Home.svg';
 import edit from '../assets/EditBlue.svg';
 
