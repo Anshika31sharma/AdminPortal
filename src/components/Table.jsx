@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 const applications = [
   { id: "0001", date: "28 December 2022", status: "Approved" },
   { id: "0002", date: "28 December 2022", status: "Rejected" },

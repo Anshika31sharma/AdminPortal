@@ -7,6 +7,6 @@ module.exports = {
   moduleFileExtensions: ["js", "jsx", "ts", "tsx"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
-    "\\.(svg|png|jpg|jpeg|gif)$": "<rootDir>/mocks/fileMock.js"
+    "\\.(svg|png|jpg|jpeg|gif)$": "<rootDir>/mocks/fileMock.js",
   },
 };

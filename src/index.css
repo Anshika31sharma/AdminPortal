@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @layer base {
   :root {
-    --font-outfit: 'Outfit', sans-serif;
+    --font-outfit: "Outfit", sans-serif;
   }
 
   body {
@@ -14,6 +14,8 @@
     font-family: var(--font-outfit);
   }
 }
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }

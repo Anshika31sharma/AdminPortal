@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Tabs from "./components/Tabs";
@@ -31,16 +31,15 @@ function App() {
         <div className="fixed inset-0 min-h-screen  bg-opacity-30 z-20 lg:hidden" />
       )}
 
-  <div
-  ref={sidebarRef}
-  className={`bg-white shadow-md transition-transform duration-300 ease-in-out
+      <div
+        ref={sidebarRef}
+        className={`bg-white shadow-md transition-transform duration-300 ease-in-out
     fixed top-0 left-0 z-30 h-screen
     ${showSidebar ? "translate-x-0" : "-translate-x-full"}
     w-48 md:w-60 lg:w-64 lg:translate-x-0`}
->
-  <Sidebar />
-</div>
-
+      >
+        <Sidebar />
+      </div>
 
       <div className="flex-1 w-full lg:ml-64 ">
         <Navbar onMenuClick={() => setShowSidebar(true)} />
